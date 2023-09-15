@@ -6,7 +6,7 @@ import axios from "axios";
 
 function App() {
   const [options, setOptions] = useState([]);
-  const [to, setTo] = useState("en");
+  const [to, setTo] = useState("hi");
   const [from, setFrom] = useState("en");
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
