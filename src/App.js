@@ -44,9 +44,10 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Language Translater</h1>
       <div>
         From ({from}):
-        <select onChange={(e) => setFrom(e.target.value)}>
+        <select className="one" onChange={(e) => setFrom(e.target.value)}>
           {options.map((opt) => (
             <option key={opt.code} value={opt.code}>
               {opt.name}
@@ -54,7 +55,7 @@ function App() {
           ))}
         </select>
         To ({to}):
-        <select onChange={(e) => setTo(e.target.value)}>
+        <select className="two" onChange={(e) => setTo(e.target.value)}>
           {options.map((opt) => (
             <option key={opt.code} value={opt.code}>
               {opt.name}
